@@ -1,5 +1,128 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+}
+html{
+    font-size: 64px;
+
+}
+
+/* <!-- header start --> */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: .4rem;
+}
+
+nav ul li {
+    list-style: none;
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-size: .2rem;
+    font-weight: 500;
+    line-height: 26px;
+    /* 144.444% */
+    /* margin-right: 25px; */
+}
+
+/* primary */
+.primary-btn {
+    color: #FFF;
+    font-size: .3rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+}
+
+/* banner style */
+.banner-text {
+    max-width: 800px;
+    /* background-color: red; */
+    margin: 50px auto;
+    text-align: center;
+}
+.banner-text *{
+    margin: 10px 0;
+}
+
+.banner-text h1 {
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.banner-text p {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+.banner img{
+    width: 100%;
+}
+
+/* <!-- header end --> */
+
+/* responsive website */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header {
+        background: rgba(255, 144, 14, 0.10);
+        padding: 20px 30px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    /* nav ul{
+        flex-direction: column;
+    } */
+    .banner-text h1 {
+        font-size: 0.5rem;
+    }
+    .banner-text {
+        margin: 30px auto;
+    }
+    
+}
+
+/* tablet devices */
+@media screen and (min-width:577px) and (max-width:992px) {
+    header {
+        background: rgba(255, 144, 14, 0.10);
+        padding: 10px  50px;
+        /* background-color: red; */
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .banner-text h1 {
+        font-size: 0.7rem;
+    }
+    .banner-text {
+        margin: 40px auto;
+    }
 }
